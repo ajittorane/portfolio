@@ -1,10 +1,3 @@
-/**
-* Template Name: Kelly
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -184,3 +177,53 @@
   });
 
 })();
+
+
+
+
+
+
+//SEND MESSAGE
+
+let url = 'https://script.google.com/macros/s/AKfycbyIHWOc3irYm1yvmorrbneK3yMh7l2p0822Jo1lX28C9IZ4UBtTeLwNEcRGXtazyUqETA/exec';
+let form = document.querySelector('#form');
+let loading = document.querySelector('.loading');
+let resBox = document.getElementById('res');
+let btn = form.querySelector('button[type="submit"]');
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Show loading animation and change button text
+  loading.style.display = "block";
+  btn.disabled = true;
+  btn.innerHTML = "Submitting...";
+
+  let d = new FormData(form);
+
+  fetch(url, {
+    method: "POST",
+    body: d
+  })
+  .then((res) => res.text())
+  .then((finalRes) => {
+    // Show response message
+    resBox.innerHTML = finalRes;
+    form.reset();
+  })
+  .catch((err) => {
+    resBox.innerHTML = "Submission failed. Please try again.";
+    console.error("Error:", err);
+  })
+  .finally(() => {
+    // Hide loading and reset UI
+    loading.style.display = "none";
+    btn.disabled = false;
+    btn.innerHTML = "Send Message";
+
+    // Clear message after 5 seconds
+    setTimeout(() => {
+      resBox.innerHTML = '';
+    }, 5000);
+  });
+});
