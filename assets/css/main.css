@@ -1,15 +1,4 @@
-/**
-* Template Name: Kelly
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -89,7 +78,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+.msg-form-control .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -99,7 +88,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .sent-message {
+.msg-form-control .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -109,7 +98,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .loading {
+.msg-form-control .loading {
   display: none;
   background: var(--surface-color);
   text-align: center;
@@ -117,7 +106,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.php-email-form .loading:before {
+.msg-form-control .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -129,7 +118,7 @@ h6 {
   animation: php-email-form-loading 1s linear infinite;
 }
 
-@keyframes php-email-form-loading {
+@keyframes msg-form-control-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -1219,7 +1208,7 @@ a{
   color: #1f71ce;
 }
 
-.contact .php-email-form {
+.contact .msg-form-control {
   background-color: var(--surface-color);
   height: 100%;
   padding: 30px;
@@ -1227,14 +1216,14 @@ a{
 }
 
 @media (max-width: 575px) {
-  .contact .php-email-form {
+  .contact .msg-form-control {
     padding: 20px;
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contact .msg-form-control input[type=text],
+.contact .msg-form-control input[type=email],
+.contact .msg-form-control textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1244,19 +1233,19 @@ a{
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
+.contact .msg-form-control input[type=text]:focus,
+.contact .msg-form-control input[type=email]:focus,
+.contact .msg-form-control textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contact .msg-form-control input[type=text]::placeholder,
+.contact .msg-form-control input[type=email]::placeholder,
+.contact .msg-form-control textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .msg-form-control button[type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1265,6 +1254,6 @@ a{
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .msg-form-control button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
