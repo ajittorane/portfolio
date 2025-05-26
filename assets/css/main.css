@@ -115,7 +115,7 @@ h6 {
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+  animation:  msg-form-control-loading 1s linear infinite;
 }
 
 @keyframes msg-form-control-loading {
