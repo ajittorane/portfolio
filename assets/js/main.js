@@ -185,7 +185,7 @@
 
 //SEND MESSAGE
 
-let url = 'https://script.google.com/macros/s/AKfycbyIHWOc3irYm1yvmorrbneK3yMh7l2p0822Jo1lX28C9IZ4UBtTeLwNEcRGXtazyUqETA/exec';
+let url = 'https://script.google.com/macros/s/AKfycbwYcZ9VrUELHuuFmI3yobpZn0-8PrAlRB4SHnO12EHftQRfpdLVCIrc7TrKo-Hh2Gr5zQ/exec';
 let form = document.querySelector('#form');
 let loading = document.querySelector('.loading');
 let resBox = document.getElementById('res');
